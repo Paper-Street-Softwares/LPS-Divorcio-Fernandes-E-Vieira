@@ -76,6 +76,7 @@ export default function Index() {
 
           <AlternatingSection index={3} colorMode={colorMode}>
             <Speed colorMode={colorMode} />
+            {/* <Cards colorMode={colorMode} /> */}
           </AlternatingSection>
 
           <AlternatingSection index={4} colorMode={colorMode}>
@@ -130,7 +131,6 @@ export default function Index() {
             {/* <Emergency colorMode={colorMode} /> */}
             {/* <Diferences colorMode={colorMode} /> */}
 
-            {/* <Cards colorMode={colorMode} /> */}
             {/* <Team colorMode={colorMode} /> */}
             {/* <Authority colorMode={colorMode} /> */}
           </Suspense>

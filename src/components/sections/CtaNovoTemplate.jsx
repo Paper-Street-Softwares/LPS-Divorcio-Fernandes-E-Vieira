@@ -92,18 +92,8 @@ function CtaNovoTemplate({ colorMode, container }) {
             </p>
 
             {container && (
-              <div
-                className={`rounded-lg p-4 mb-4 flex flex-col items-center ${textOpacity}`}
-              >
-                {containerList.map((item, index) => (
-                  <div
-                    key={index}
-                    className="font-secondFont flex gap-2 items-start w-full justify-start tablet1:justify-center text-start desktop1:text-start"
-                  >
-                    <span className={`${textDestaque}`}>{item.icon}</span>
-                    <p className={`${textOpacity}`}>{item.text}</p>
-                  </div>
-                ))}
+              <div className={`rounded-lg p-4 mb-4 text-start font-secondFont`}>
+                {content.texts.ctaSecondary.container}
               </div>
             )}
 

@@ -8,7 +8,7 @@ import imgFeatures from '../assets/imgs/features/imgServices.webp'
 import aboutImg from '../assets/imgs/about/aboutImg.webp'
 // import team1 from '../assets/imgs/team/team1.webp'
 // import team2 from '../assets/imgs/team/team2.webp'
-import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
+// import aboutSocialImg from '../assets/imgs/about/aboutSocial.webp'
 
 import imgSteps from '../assets/imgs/steps/imgSteps.webp'
 
@@ -30,6 +30,9 @@ import {
   Car,
   HandCoins,
   Check,
+  ShoppingCart,
+  Building,
+  BriefcaseBusiness,
 } from 'lucide-react'
 
 import { FileText } from 'lucide-react'
@@ -419,23 +422,23 @@ const content = {
       titleModal: 'A_Definir',
       ctaButtonAriaLabel: 'Botão para entrar em contato',
       ctaButtonText: 'Falar diretamente com as Advogadas',
-      aboutSocial: {
-        img: {
-          img: aboutSocialImg,
-          alt: `Foto do Instagram do ${infos.name}`,
-          altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
-        },
-        miniTag: 'REDES SOCIAIS',
-        title: 'Conecte-se conosco',
-        subtitle: 'A_Definir',
-        paragraph: <p></p>,
-        labelInstagram: 'Siga-nos no Instagram',
-        labelFacebook: 'Siga-nos no Facebook',
-        labelLinkedin: 'Siga-nos no LinkedIn',
-        labelX: 'Siga-nos no X',
-        labelTiktok: 'Siga-nos no Tik Tok',
-        labelYoutube: 'Siga-nos no Youtube',
-      },
+      // aboutSocial: {
+      //   img: {
+      //     img: aboutSocialImg,
+      //     alt: `Foto do Instagram do ${infos.name}`,
+      //     altDefault: 'Imagem ilustrativa da Seção de Redes Sociais',
+      //   },
+      //   miniTag: 'REDES SOCIAIS',
+      //   title: 'Conecte-se conosco',
+      //   subtitle: 'A_Definir',
+      //   paragraph: <p></p>,
+      //   labelInstagram: 'Siga-nos no Instagram',
+      //   labelFacebook: 'Siga-nos no Facebook',
+      //   labelLinkedin: 'Siga-nos no LinkedIn',
+      //   labelX: 'Siga-nos no X',
+      //   labelTiktok: 'Siga-nos no Tik Tok',
+      //   labelYoutube: 'Siga-nos no Youtube',
+      // },
     },
     // team: {
     //   miniTag: ' A_Definir',
@@ -505,6 +508,45 @@ const content = {
           </p>
         </div>
       ),
+      container: (
+        <div className="flex flex-col gap-3">
+          <div className="flex items-start gap-2 mx-auto">
+            {' '}
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Orientação clara sobre seus direitos no divórcio
+          </div>
+          <div className="flex items-start gap-2 mx-auto">
+            {' '}
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Atendimento humanizado e sigiloso com Advogada especializada
+          </div>
+          <div className="flex items-start gap-2 mx-auto">
+            {' '}
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Divórcio online, sem audiências e sem desgaste emocional
+          </div>
+          <div className="flex items-start gap-2 mx-auto">
+            {' '}
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Acompanhamento rápido pelo WhatsApp, do início ao fim
+          </div>
+          <div className="flex items-start gap-2 mx-auto">
+            {' '}
+            <span className="border-2 rounded-full p-1">
+              <Check className="" width={17} height={17} />
+            </span>{' '}
+            Segurança para encerrar esse ciclo e seguir em frente
+          </div>
+        </div>
+      ),
       // subtitleDireita: (
       //   <p className="gap-3 flex font-mainFont opacity-60 mt-1">
       //     <span>E N T R E </span> E M <span>C O N T A T O</span> V I A
@@ -554,6 +596,33 @@ const content = {
       },
 
       paragraph: 'Clique aqui caso tenha mais dúvidas',
+    },
+    cardsSection: {
+      miniTag: 'Áreas de Atuação',
+      title: 'Atuação jurídica completa para proteger seus direitos',
+      subtitle:
+        'Soluções legais pensadas para prevenir conflitos, resolver problemas e garantir segurança jurídica em diferentes áreas do Direito.',
+      cards: {
+        card1: {
+          title: 'Direito Civil',
+          icon: <Users />,
+        },
+        card2: {
+          title: 'Direito do Consumidor',
+          icon: <ShoppingCart />,
+        },
+        card3: {
+          title: 'Direito Imobiliário',
+          icon: <Building />,
+        },
+        card4: {
+          title: 'Direito Trabalhista',
+          icon: <BriefcaseBusiness />,
+        },
+      },
+
+      ctaButtonText: 'Clique aqui e conheça nosso escritório',
+      linkCtaButton: 'https://previa-principal.brasilmatos.com.br/',
     },
     // team: {
     //   miniTag: 'A_Definir',
