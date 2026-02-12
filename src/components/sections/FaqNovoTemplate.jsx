@@ -92,7 +92,7 @@ function FaqNovoTemplate({ colorMode }) {
 
           <MotionDivDownToUp>
             <div
-              className={`flex justify-center mx-auto mt-12 scale-100 hover:scale-90 duration-500 w-fit transition-all cursor-pointer ${textOpacity}`}
+              className={`flex justify-center mx-auto mt-12 cursor-pointer ${textOpacity}`}
             >
               <ButtonReflexo
                 icon={content.texts.svgs.wpp}
